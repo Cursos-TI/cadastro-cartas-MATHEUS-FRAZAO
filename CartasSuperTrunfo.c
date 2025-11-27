@@ -19,6 +19,45 @@ int main() {
     float pib2;
     int pontosTuristicos2;
 
+    // Variáveis Globais de Temperaturas
+
+int quantidade;
+float temperaturas[100];
+float media;
+
+// Função: Entrada de dados (temperaturas)
+void entradaDados() {
+    printf("\n COLETA DE TEMPERATURAS \n");
+    printf("Quantas temperaturas deseja informar? ");
+    scanf("%d", &quantidade);
+
+    for (int i = 0; i < quantidade; i++) {
+        printf("Digite a temperatura %d: ", i + 1);
+        scanf("%f", &temperaturas[i]);
+    }
+}
+
+
+// Função: Calcular Média
+
+float calcularMedia() {
+    float soma = 0;
+
+    for (int i = 0; i < quantidade; i++) {
+        soma += temperaturas[i];
+    }
+
+    return soma / quantidade;
+}
+
+
+// Função: Exibir Média
+
+void exibirMedia() {
+    printf("\n MÉDIA DAS TEMPERATURAS \n");
+    printf("Média calculada: %f °C \n", media);
+}
+
     // ===== Entrada dos dados da Carta 1 =====
     printf("=== Cadastro da Carta 1 ===\n");
 
