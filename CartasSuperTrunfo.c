@@ -30,6 +30,7 @@ int main() {
 
     printf("Nome da cidade: ");
     scanf("%d", nomeCidade1);
+    // depois da cidade esta cortando açao dos demais e ficando juntos me ajude por favor
 
     printf("População:");
     scanf("%d", &populacao1);
