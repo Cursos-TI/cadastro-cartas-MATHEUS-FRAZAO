@@ -18,48 +18,10 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
-
-    // Variáveis Globais de Temperaturas
-
-int quantidade;
-float temperaturas[100];
-float media;
-
-// Função: Entrada de dados (temperaturas)
-void entradaDados() {
-    printf("\n COLETA DE TEMPERATURAS \n");
-    printf("Quantas temperaturas deseja informar? ");
-    scanf("%d", &quantidade);
-
-    for (int i = 0; i < quantidade; i++) {
-        printf("Digite a temperatura %d: ", i + 1);
-        scanf("%f", &temperaturas[i]);
-    }
-}
-
-
-// Função: Calcular Média
-
-float calcularMedia() {
-    float soma = 0;
-
-    for (int i = 0; i < quantidade; i++) {
-        soma += temperaturas[i];
-    }
-
-    return soma / quantidade;
-}
-
-
-// Função: Exibir Média
-
-void exibirMedia() {
-    printf("\n MÉDIA DAS TEMPERATURAS \n");
-    printf("Média calculada: %f °C \n", media);
 }
 
     // ===== Entrada dos dados da Carta 1 =====
-    printf("=== Cadastro da Carta 1 ===\n");
+    printf( " Cadastro da Carta 1 \n");
 
     printf("Estado (A-H): ");
     scanf("%c", &estado1);
@@ -128,5 +90,27 @@ void exibirMedia() {
     printf("PIB: %f \n", pib2);
     printf("Número de Pontos Turísticos: %d \n", pontosTuristicos2);
 
-    return 0;
+    #include <stdio.h>
+ 
+// Função genérica para entrada de dados
+void entradaDados() {
+    // código para a função entradaDados
 }
+ 
+// Função genérica para cálculo da média
+float calcularMedia() {
+    // código para a função calcularMedia
+}
+ 
+// Função genérica para exibir dados
+void exibirMedia() {
+    // código para a função exibirMedia
+}
+ 
+int main() {
+ 
+    entradaDados();
+    media = calcularMedia();
+    exibirMedia();
+ 
+    return 0; }
