@@ -21,7 +21,7 @@ int main() {
 }
 
     // ===== Entrada dos dados da Carta 1 =====
-    printf( " Cadastro da Carta 1 \n");
+    printf(" Cadastro da Carta 1 \n");
 
     printf("Estado (A-H): ");
     scanf("%c", &estado1);
